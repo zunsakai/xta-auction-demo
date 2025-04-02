@@ -43,7 +43,7 @@ export const createCandleWebSocket = (symbol: string, onMessage: (candle: Candle
     const message = JSON.parse(event.data)
 
     if (message.k) {
-      const { t, o, h, l, c, v, x } = message.k
+      const { t, o, h, l, c, v } = message.k
 
       const candle: Candle = {
         time: t / 1000, // Convert to seconds for lightweight-charts

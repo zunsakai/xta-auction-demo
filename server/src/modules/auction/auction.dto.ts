@@ -5,13 +5,13 @@ export class CreateAuctionDto {
   @ApiProperty({ required: true, type: Number, example: 50 })
   @IsNotEmpty()
   @IsNumber()
-  @Min(50, { message: 'Starting price must not be less than 50.000.000 VNĐ' })
+  @Min(50, { message: 'Starting price must not be less than 50.000.000 ₫' })
   startingPrice: number = 50
 
   @ApiProperty({ required: true, type: Number, example: 5 })
   @IsNotEmpty()
   @IsNumber()
-  @Min(5, { message: 'Min increment must not be less than 5.000.000 VNĐ' })
+  @Min(5, { message: 'Min increment must not be less than 5.000.000 ₫' })
   minIncrement: number = 5
 }
 

@@ -72,3 +72,22 @@ Allow users to place bids through the frontend.
 ---
 
 # 2. Setup
+
+### Start database
+```shell
+docker compose up -d
+```
+
+### Start backend
+```shell
+cd backend
+npm install
+npm run start
+```
+
+### Start frontend
+```shell
+cd frontend
+npm install
+npm run start
+```
