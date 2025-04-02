@@ -96,8 +96,8 @@ npm run start
 # 3. Demo
 
 <div align="center">
-  <img height="500px" src="https://raw.githubusercontent.com/zunsakai/xta-auction-demo/refs/heads/main/example/auction.png" />
+  <img src="https://raw.githubusercontent.com/zunsakai/xta-auction-demo/refs/heads/main/example/auction.png" />
 </div>
 <div align="center">
-  <img height="500px" src="https://raw.githubusercontent.com/zunsakai/xta-auction-demo/refs/heads/main/example/live-chart.png" />
+  <img src="https://raw.githubusercontent.com/zunsakai/xta-auction-demo/refs/heads/main/example/live-chart.png" />
 </div>
