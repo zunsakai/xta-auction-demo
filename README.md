@@ -81,7 +81,7 @@ docker compose up -d
 
 ### Start backend
 ```shell
-cd backend
+cd server
 npm install
 npm run start
 ```
