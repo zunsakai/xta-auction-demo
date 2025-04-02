@@ -9,6 +9,7 @@
     - [Frontend Feature: Real-time Crypto Price Chart](#11-frontend-feature-real-time-crypto-price-chart)
     - [Backend Feature: Asset Auction](#12-backend-feature-asset-auction)
 - [Setup](#2-setup)
+- [Demo](#3-demo)
 <!-- /TOC -->
 
 # 1. Requirements
@@ -91,3 +92,12 @@ cd frontend
 npm install
 npm run start
 ```
+
+# 3. Demo
+
+<div align="center">
+  <img height="500px" src="https://raw.githubusercontent.com/zunsakai/xta-auction-demo/refs/heads/main/example/auction.png" />
+</div>
+<div align="center">
+  <img height="500px" src="https://raw.githubusercontent.com/zunsakai/xta-auction-demo/refs/heads/main/example/live-chart.png" />
+</div>
