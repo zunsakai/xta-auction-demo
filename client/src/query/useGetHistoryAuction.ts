@@ -33,7 +33,7 @@ const getAuctionHistory = async (auctionId: string): Promise<AuctionHistory> => 
         }
       : {}
 
-    const response = await axios.get(`http://localhost:8000/auction/history/${auctionId}`, config)
+    const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/auction/history/${auctionId}`, config)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {

@@ -20,7 +20,7 @@ interface RegisterResponse {
 
 const register = async (credentials: RegisterCredentials): Promise<RegisterResponse> => {
   try {
-    const response = await axios.post('http://localhost:8000/auth/register', credentials)
+    const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/auth/register`, credentials)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {

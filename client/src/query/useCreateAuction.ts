@@ -31,7 +31,7 @@ const createAuction = async (payload: CreateAuctionPayload): Promise<AuctionResp
         }
       : {}
 
-    const response = await axios.post('http://localhost:8000/auction', payload, config)
+    const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/auction`, payload, config)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {

@@ -20,7 +20,7 @@ interface LoginResponse {
 
 const login = async (credentials: LoginCredentials): Promise<LoginResponse> => {
   try {
-    const response = await axios.post('http://localhost:8000/auth/login', credentials)
+    const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/auth/login`, credentials)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {

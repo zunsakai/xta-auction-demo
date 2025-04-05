@@ -24,7 +24,7 @@ const getCurrentAuction = async (): Promise<Auction> => {
         }
       : {}
 
-    const response = await axios.get('http://localhost:8000/auction/current', config)
+    const response = await axios.get(`${process.env.REACT_APP_BASE_URL}/auction/current`, config)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {

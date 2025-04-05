@@ -26,7 +26,7 @@ const placeBid = async (payload: BidPayload): Promise<BidResponse> => {
         }
       : {}
 
-    const response = await axios.post('http://localhost:8000/auction/bid', payload, config)
+    const response = await axios.post(`${process.env.REACT_APP_BASE_URL}/auction/bid`, payload, config)
     return response.data
   } catch (error) {
     if (axios.isAxiosError(error)) {
